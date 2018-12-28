@@ -214,7 +214,7 @@ public class LiquidacionCtrl implements Serializable {
             String msg = ServiciosPredio.reevaluarConstruccioGlobal(getSessionUsuario().getIdPersona());
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, "Correcto", msg));
             DefaultRequestContext.getCurrentInstance().execute("PF('wldgReevaluacionGlobal').hide();");
-            buscarPredios2();
+            ///buscarPredios2();
             DefaultRequestContext.getCurrentInstance().update("frmPrincipal:tblPredios");
         } catch (Exception e) {
             FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_ERROR, "Error", e.getMessage()));
