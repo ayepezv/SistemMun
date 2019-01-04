@@ -109,7 +109,8 @@
                                         <h:outputText value="#{excencion.excencion.excencion}"/>
                                     </p:column>
                                     
-                                     <p:column headerText="Edad" width="5%" style="text-align: center">
+                                     <p:column filterBy="#{excencion.predio.propietario.edad}" filterMatchMode="contains"
+                                               headerText="Edad" width="5%" style="text-align: center">
                                          <h:outputText value="#{excencion.predio.propietario.edad}"/>
                                     </p:column>
 

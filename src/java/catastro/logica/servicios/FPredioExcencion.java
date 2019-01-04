@@ -54,6 +54,7 @@ public class FPredioExcencion {
                 excencion.setAvaluoImponible(resultSet.getDouble("db_avaluo_imponible"));
                 excencion.setDsctoExcencion(resultSet.getDouble("db_descuento_excencion"));
                 excencion.setCapitalBiess(resultSet.getDouble("db_capital_biess"));
+                excencion.getPredio().getPropietario().setEdad(resultSet.getInt("edad_exacta"));
                 lst.add(excencion);
             }
         } catch (Exception e) {
