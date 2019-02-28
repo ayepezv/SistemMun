@@ -122,12 +122,12 @@
                                         <f:convertNumber pattern="#0.00" />
                                     </h:outputLabel>
                                 </p:column>
-                                <p:column width="2%" style="text-align: center">
+                                <p:column headerText="Editar Nombre" width="2%" style="text-align: center">
                                     <p:commandButton icon="ui-icon-pencil"
                                                      title="Editar" onclick="PF('dlgEditarBloque').show()"
                                                      update="frmEditarBloque"/>
                                 </p:column>
-                                <p:column width="2%" style="text-align: center">
+                                <p:column headerText="Ver Pisos" width="2%" style="text-align: center">
                                     <p:commandButton icon="ui-icon-create-new-folder"
                                                      title="Ver Pisos"
                                                      action="#{registrarConstruccionesCtrl.obtenerPisosDadoBloque()}"
