@@ -133,6 +133,9 @@ from catastro.f_obtener_libro_predial_dado_anio_v3($P{anio_consulta}),
 	<variable name="Total_construccion" class="java.lang.Double" calculation="Sum">
 		<variableExpression><![CDATA[$F{db_valor_construccion}]]></variableExpression>
 	</variable>
+	<variable name="des-rec" class="java.lang.Double" calculation="Sum">
+		<variableExpression><![CDATA[$F{db_descuento}]]></variableExpression>
+	</variable>
 	<title>
 		<band height="102" splitType="Stretch">
 			<staticText>
@@ -375,6 +378,13 @@ from catastro.f_obtener_libro_predial_dado_anio_v3($P{anio_consulta}),
 					</textElement>
 					<textFieldExpression><![CDATA[$F{numero}]]></textFieldExpression>
 				</textField>
+				<textField isStretchWithOverflow="true" pattern="¤ #,##0.00" isBlankWhenNull="true">
+					<reportElement style="Detail" positionType="Float" x="1010" y="0" width="48" height="18" uuid="fe19275b-9709-4221-ae36-5380bbaf7af0"/>
+					<textElement>
+						<font fontName="Arial" size="8" pdfFontName="Helvetica" isPdfEmbedded="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{db_descuento}]]></textFieldExpression>
+				</textField>
 			</frame>
 			<textField isStretchWithOverflow="true" pattern="¤ #,##0.00" isBlankWhenNull="true">
 				<reportElement style="Detail" positionType="Float" x="1058" y="0" width="48" height="18" uuid="8c8f2bd3-f946-4057-a32c-a00bdcfb0f78"/>
@@ -555,7 +565,7 @@ from catastro.f_obtener_libro_predial_dado_anio_v3($P{anio_consulta}),
 				<textFieldExpression><![CDATA[$V{db_procesamiento_1}]]></textFieldExpression>
 			</textField>
 			<textField pattern="¤ #,##0.00">
-				<reportElement x="1033" y="61" width="100" height="20" uuid="886d284e-482b-4006-86c7-1de98437c666"/>
+				<reportElement x="1033" y="62" width="100" height="20" uuid="886d284e-482b-4006-86c7-1de98437c666"/>
 				<textElement>
 					<font fontName="Arial" size="12" pdfFontName="Helvetica" isPdfEmbedded="true"/>
 				</textElement>
@@ -617,6 +627,13 @@ from catastro.f_obtener_libro_predial_dado_anio_v3($P{anio_consulta}),
 				</textElement>
 				<text><![CDATA[TOTAL]]></text>
 			</staticText>
+			<textField pattern="¤ #,##0.00">
+				<reportElement x="931" y="62" width="100" height="20" uuid="aaf44e92-2e91-4a8d-b8b4-91b6dc4a3d21"/>
+				<textElement>
+					<font fontName="Arial" size="12" pdfFontName="Helvetica" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{des-rec}]]></textFieldExpression>
+			</textField>
 		</band>
 	</summary>
 </jasperReport>

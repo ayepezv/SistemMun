@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a9ea6a1f-e8eb-4837-a568-edd436bc5324">
 	<property name="ireport.zoom" value="1.5"/>
-	<property name="ireport.x" value="241"/>
-	<property name="ireport.y" value="735"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
 	<parameter name="id_predio" class="java.lang.Integer">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 	</parameter>
@@ -291,14 +291,14 @@
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="8" pdfFontName="Helvetica" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[ING. ANDRÉS BONILLA]]></text>
+				<text><![CDATA[ING. JAIME SHIGUANGO]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="431" y="8" width="123" height="19" uuid="fb26e522-fd50-4fba-a088-a4b9ced6a10f"/>
 				<textElement textAlignment="Center">
 					<font fontName="SansSerif" size="8" pdfFontName="Helvetica" isPdfEmbedded="true"/>
 				</textElement>
-				<text><![CDATA[ALCALDE 2019 - 2023]]></text>
+				<text><![CDATA[ALCALDE 2014 - 2019]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="12" width="45" height="15" uuid="f448883b-eca5-43b4-bbbb-106c5f334a77"/>
